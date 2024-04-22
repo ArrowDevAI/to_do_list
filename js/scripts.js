@@ -1,14 +1,13 @@
 function newItem() {
     let li = $('<li></li>');
     let inputValue = $('#input').val();
-    li.append(inputValue); // Set the text content directly
-    
+    li.append(inputValue); 
     if (inputValue === '') {
       alert("You must write something!");
     } else {
       $('#list').append(li);
   
-      // Attach the event handler for crossing out directly
+      
       li.on("dblclick", function() {
         $(li).toggleClass("strike");
       });
@@ -19,8 +18,8 @@ function newItem() {
  
       function deleteListItem() {
         $(this).parent().remove(); // $(this) will be what triggered the event, in this case, it is the crossOutButton
-        // also, .parent is the particular line item beacuse int he cose above it was appended as a chile to the li.The next in the
-        //chain is .remove so now that li will be removed when the deleteListItem is called below. 
+        // also, .parent is the particular line item because in the code above it was appended as a child to the li.The next in the
+        //chain is .remove so now that list item will be removed when the deleteListItem is called below. 
       } 
   
       crossOutButton.on("click", deleteListItem);
