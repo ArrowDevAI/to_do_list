@@ -24,7 +24,7 @@ padding: 4px 15px 4px 5px;
 
 #button{
 display: inline-block;
-background-color:#fc999b;
+background-color:#872425;
 color:#ffffff;
 border-radius: 5px;
 text-align:center;
@@ -33,7 +33,7 @@ padding: 5px 15px;
 }
 
 #button:hover{
-cursor: pointer;
+cursor:crosshair;
 opacity: .8;}
 
 ol {padding-left: 20px;}
